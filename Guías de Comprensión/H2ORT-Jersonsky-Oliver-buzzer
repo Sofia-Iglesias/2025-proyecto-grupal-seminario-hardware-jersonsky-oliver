@@ -1,0 +1,34 @@
+Nombre del componente: buzzer
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+El dispositivo es un actuador cuya función se basa en emitir sonidos.
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+Un buzzer pasivo utiliza señales analógicas mientras que un buzzer activo se comunica con señales digitales. Nosotros habíamos elegido un buzzer pasivo
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+entre 0 y 255
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+positivo: entrada de la señal
+negativo: cierra el circuito
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+El negativo se conecta al GND para conectar a tierra, mientras que el positivo se conecta a cualquier pin PWM para poder variar el sonido a emitir
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+¿Cuál es el principio de funcionamiento del componente?
+Convierte energía eléctrica en sonora mediante vibraciones, ya que dentro del dispositivo hay una suerte de bobina que al recibir las señales eléctricas del arduino vibra velozmente produciendo sonido.
+¿Utiliza alguna librería particular para programarlo?
+no, con arduino IDE alcanza
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+Dependiendo en lo que reciba con las señales de PWM emitirá un tono distinto
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+no alimentar de mas
+poner resistencia
+conectar correctamente los pines
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Lo probaría directamente conectándolo a una pila de 3 o 5 Volts para ver si emite sonido.
+Simular en Tinkercad e incluir el link de la simulación. 
+https://www.tinkercad.com/things/8YDmW3RfyMR/editel?returnTo=%2Fdashboard 
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+no aplica ya que es una salida, por lo que no hay lectura, pero espero, si funciona bien, que emita un sonido
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+puede estar mal conectado
+puede estar dañado
+Esto se previene revisando atentamente el componente y el cableado

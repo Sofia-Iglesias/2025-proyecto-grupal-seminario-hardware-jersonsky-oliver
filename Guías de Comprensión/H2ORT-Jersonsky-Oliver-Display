@@ -1,0 +1,38 @@
+Nombre del componente: display de 7 segmentos
+
+
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+Es un actuador cuya función es mostrar visualmente la información deseada
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+Señales digitales, con la combinación de bits
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+Toma ceros y unos, siendo 0 low y 1 high
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+7 pines digitales asociados con cada segmento
+GND, para cerrar el circuito y conectar a tierra
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+Los 7 pines digitales se conectan a pines digitales del arduino para así poder recibir la señal que indica si prenderse (1) o apagarse (0)
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+¿Cuál es el principio de funcionamiento del componente?
+Se iluminan los sectores correspondientes para poder formar el número deseado. 
+¿Utiliza alguna librería particular para programarlo?
+alcanza con arduino IDE
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+Con el programa se recibe lo que se debe mostrar con este componente, y este mismo funciona con señales digitales, prendiendo y apagando segmentos en base a la información recibida,  ya que a cada segmento se le asocia un valor, 0 o 1, siendo apagado o prendido.
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+conectar adecuadamente
+dar alimentación apropiada
+asegurarse que no se sobrecaliente
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Lo conectaría cuidadosamente y lo probaría con un código básico, haciendo que muestre algo simple.
+Simular en Tinkercad e incluir el link de la simulación. 
+https://www.tinkercad.com/things/cOdMXxzkl5M/editel?returnTo=%2Fdashboard 
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+No espero que haya lectura, ya que es una salida. Lo que espero de un display es que muestre visualmente la información deseada.
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+Problemas de alimentación
+errores en la conexión
+error en el código
+el componente estando dañado
+Todo esto se puede comprobar mediante una prueba antes de incorporarlo al proyecto, y si falla, revisar todas las posibles fallas para ir descartando hasta encontrar el problema.

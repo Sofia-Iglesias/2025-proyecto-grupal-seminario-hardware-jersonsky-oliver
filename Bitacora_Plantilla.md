@@ -14,6 +14,7 @@ Dificultades:
 Falta de ideas
 Próximos Pasos:
 Definir proyecto
+
 Semana 2
 Fecha: 19/08
 Actividades Realizadas:
@@ -23,6 +24,7 @@ Dificultades:
 indecisión respecto a los elementos
 Próximos Pasos:
 investigar
+
 Semana 3
 Fecha:26/08
 Actividades Realizadas:
@@ -32,6 +34,7 @@ Dificultades:
 nada en particular
 Próximos Pasos:
 investigar los componentes
+
 Semana 4
 Fecha:02/09
 Actividades Realizadas:
@@ -42,6 +45,7 @@ algunos elementos resultaban difíciles de comprender
 algunos elementos resultaban difíciles de comprender 
 Próximos Pasos:
 continuar con esto ya que no terminamos
+
 Semana 5
 Fecha:09/09
 Actividades Realizadas:
@@ -52,6 +56,7 @@ algunos elementos resultaban difíciles de comprender
 algunos elementos resultaban difíciles de comprender 
 Próximos Pasos:
 planificar etapas del proyecto
+
 Semana 6
 Fecha:16/09
 Actividades Realizadas:
@@ -60,6 +65,7 @@ Dificultades:
 dudas respecto a si llegaríamos con el tiempo 
 Próximos Pasos:
 comenzar a familiarizarnos con los componentes
+
 Semana 7
 Fecha:30/09
 Actividades Realizadas:
@@ -68,6 +74,7 @@ Dificultades:
 recién comenzábamos a comprender PWM
 Próximos Pasos:
 seguir probando elementos
+
 Semana 8
 Fecha: 21/10
 Actividades Realizadas:
@@ -76,6 +83,7 @@ Dificultades:
 El primero que agarramos estaba defectuoso
 Próximos Pasos:
 seguir probando elementos
+
 Semana 9
 Fecha: 28/10
 Actividades Realizadas:

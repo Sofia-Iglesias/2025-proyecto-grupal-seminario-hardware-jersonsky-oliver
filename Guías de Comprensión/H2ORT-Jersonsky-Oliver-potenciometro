@@ -1,0 +1,36 @@
+Nombre del componente: potenciómetro
+
+
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+Es una entrada que permite seleccionar manualmente el voltaje
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+Señal analogica
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+de 0 a 1023
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+VCC: conexión a fuente de energía
+GND: conexión a tierra
+OUT: es el pin relacionado con la variación de voltaje que permite el elemento
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+VCC lo conectaría a un pin de alimentación, probablemente 5V. GND a GND, para conectar a tierra y así cerrar el circuito. El pin OUT lo conectaría a cualquier pin del arduino de tipo analógico ya que son de este tipo las señales usadas para comunicarse
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+¿Cuál es el principio de funcionamiento del componente?
+Al girar la perilla, cambia la resistencia, permitiendo que pase mas o menos corriente, haciendo que también cambie el voltaje
+¿Utiliza alguna librería particular para programarlo?
+alcanza con arduino IDE
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+0: la perilla esta al mínimo, 0V
+1023: la perilla esta al máximo, 5V
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+no girar bruscamente
+conectar bien
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Con un código simple que lea el valor y lo muestre en el monitor serie
+Simular en Tinkercad e incluir el link de la simulación. 
+https://www.tinkercad.com/things/gQNClniMb7q/editel?returnTo=%2Fdashboard
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+Esperaría ver como van cambiando los valores a medida que giro la perilla
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+puede estar dañado por lo que no varia la resistencia
+Esto se detecta probando, como dijimos en el punto 11. Si al girar la perilla no cambian los valores, es señal de un problema

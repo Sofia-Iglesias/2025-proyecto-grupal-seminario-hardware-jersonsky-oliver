@@ -49,3 +49,5 @@ Además, en un display se puede ver toda la información de la planta (nivel de 
 - `Extra 1`  
 - `Extra 2`  
 - `Extra 3`
+link a simulación de todo el proyecto
+https://www.tinkercad.com/things/12TFBSCtuGh-regador-inteligente/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard  

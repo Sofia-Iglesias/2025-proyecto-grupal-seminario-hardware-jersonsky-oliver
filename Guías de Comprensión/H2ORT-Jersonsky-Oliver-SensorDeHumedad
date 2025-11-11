@@ -1,0 +1,39 @@
+Nombre del componente: Sensor de Humedad
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+Este dispositivo es un sensor cuya función principal es medir los niveles de humedad de un ambiente, en nuestro caso, lo utilizamos para saber los de la tierra.
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+El sensor de humedad se comunica con el Arduino mediante señales analógicas.
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+De 0 a 1023
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+VCC: conexión a fuente de energía
+GND: conexión a tierra
+A0: salida analógica. Manda un voltaje proporcional a la humedad del suelo
+D0 (aveces): salida digital. Manda una señal digital si el nivel de humedad excede el rango de valores.
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+3V o 5V: A este se conecta el pin VCC para la alimentación 
+GND: Se conecta al pin GND del sensor para conectar a tierra
+A0 (o cualquier pin de entrada analógica): son los pines preparados para recibir entradas analógicas
+2 (o cualquier pin de entrada digital): son los pines que pueden recibir entradas digitales
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+¿Cuál es el principio de funcionamiento del componente?
+Medición de conductividad eléctrica de la tierra: el agua ejerce poca resistencia a la corriente eléctrica, mientras que la tierra seca presenta mayor resistencia. De esta manera, el sensor detecta cuanta corriente pasa entre 2 placas de este que se insertan en la tierra.
+¿Utiliza alguna librería particular para programarlo?
+No, alcanza con Arduino IDE
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+Como mencionamos previamente, el rango de valores es de 0 a 1023, por lo que, con la mayoría de sensores de este tipo, 1023 representa muy húmedo y 0 muy seco. Cabe aclarar que, dependiendo el sensor, esto puede ser al revés (0 muy húmedo y 1023 muy seco)
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+conectar bien al arduino
+que las placas no se toquen (para evitar cortocircuito)
+no entregarle mas energía de la que requiere
+cuidado en el colocamiento, evitar que se moje y lejos de otras cosas como motores o bombas de agua.
+no dejarlo siendo alimentado todo el tiempo
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Para verificar el funcionamiento, lo probaría aparte, sin incorporarlo al proyecto. Para esto, lo conectaría y haría un programa simple que lo muestre por monitor serie.
+Simular en Tinkercad e incluir el link de la simulación.
+https://www.tinkercad.com/things/7Mx2QOsgbdQ/editel?returnTo=%2Fdashboard 
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+Esperaría obtener una lectura correspondientemente proporcional al grado de humedad de la tierra.
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+El componente podría estar fallado, teniendo problemas como desgaste en las varillas que van a tierra, daño al sensor o conexiones internas rotas. Todo esto se detecta mediante la prueba del sensor. También puede ser que haya un error en el circuito o código, ambas cosas que se deben revisar manualmente, y, en caso de muchas dudas, reemplazar por versiones más simples de estos para asegurar que sea ese el problema y poder solucionarlos.

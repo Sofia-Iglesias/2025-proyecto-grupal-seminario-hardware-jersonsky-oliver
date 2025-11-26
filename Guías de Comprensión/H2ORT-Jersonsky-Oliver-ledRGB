@@ -1,0 +1,37 @@
+Nombre del componente: led rgb
+
+
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+Es un actuador cuya función es emitir luz de colores combinando rojo, verde y azul.
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+Se comunica con señales PWM para poder controlar la intensidad de cada color
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+De 0 (apagado) a 255 (maxima intensidad)
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+roja, para controlar la luz roja
+verde, para controlar la luz verde
+azul, para controlar la luz azul
+ánodo o cátodo común, dependiendo el tipo de led
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+Los pines de colores se conectan a un pin PWM del arduino para poder controlar la intensidad, mientras que el otro se conecta a 5V o GND, dependiendo si es ánodo o catodo
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+¿Cuál es el principio de funcionamiento del componente?
+Los 3 diodos de distintos colores están encapsulados juntos, y la combinación de estos en distintas proporciones permite obtener una gran gama de colores.
+¿Utiliza alguna librería particular para programarlo?
+Alcanza con arduino IDE
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+0 es apagado mientras que 255 es la maxima intensidad
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+poner resistencias
+verificar si el 4to pin es ánodo o cátodo
+no dar demasiado voltaje
+asegurar que este bien conectado
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Lo conectaría y haría un programa que encienda cada color individualmente para ver si funciona cada diodo
+Simular en Tinkercad e incluir el link de la simulación. 
+https://www.tinkercad.com/things/iWPRnUTyqmk-arduino-led-rgb/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+no aplica ya que es una salida, por lo que no hay lectura
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+Podría haber fallas en el componente en si, también en el cálculo de las resistencias, estar mal conectado o tener errores en el código. Para detectar esto se debe revisar todo meticulosamente, el cableado y la programación, y, como dije antes en el punto 11, probaría para ver que todos los colores funcionen bien

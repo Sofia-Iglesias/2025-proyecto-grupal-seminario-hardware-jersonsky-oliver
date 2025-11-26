@@ -1,0 +1,43 @@
+Nombre del componente: bomba de agua
+
+
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+Es un actuador cuya función es bombear agua de un lugar a otro
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+Se comunican con señales digitales
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+Recibe señales digitales, siendo 0 apagado y 1 encendido
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+VCC: para la alimentación
+negativo: para conectar a tierra y cerrar el circuito
+IN: recibe señal de control del arduino
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+El VCC se conecta al pin de 5V para alimentar al elemento, aunque algunas bombas necesitan 12V por lo que se necesitaría una fuente de energía externa. El negativo de la bomba de agua se conecta a GND para cerrar el circuito, y finalmente, el IN se conecta a un transistor o relay que luego se conecta a cualquier pin digital, ya que este es el tipo de señal utilizada para la comunicación.
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+¿Cuál es el principio de funcionamiento del componente?
+Al recibir corriente se activa el motor que hace girar un impulsor. Este empuja el agua y la hace circular por una manguera
+¿Utiliza alguna librería particular para programarlo?
+alcanza con arduino IDE
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+HIGH: se enciende la bomba
+LOW: se apaga
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+no conectar directamente al arduino
+asegurar que la fuente de energía sea correcta
+asegurarse de conectar bien
+evitar que funcione sin agua
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+La probaría con un código simple y asegurándome de conectarlo bien, con un relay de intermediario entre la bomba y el arduino ya que la corriente que requiere este componente es demasiada
+Simular en Tinkercad e incluir el link de la simulación. 
+https://www.tinkercad.com/things/dlX8M44e7hd/editel?returnTo=%2Fdashboard 
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+Al no ser una entrada no hay lectura, pero como salida, esperaría que cumpliese con la función de mover agua
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+la bomba puede bloquearse o quemarse
+puede no recibir la alimentación requerida
+el relay o transistor puede no funcionar adecuadamente
+errores en el código
+Todo esto se detecta con la minuciosa revisión tanto del elemento como de las conexiones y código.
+
+

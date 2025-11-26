@@ -1,0 +1,39 @@
+Nombre del componente: sensor nivel de agua
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+Es un sensor que mide la cantidad de agua
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+señal analógica 
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+de 0 a 1023
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+VCC: para alimentación
+GND: para puesta a tierra y cierre del circuito
+A0: salida analógica, para mandarle el valor al arduino
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+5V: para alimentación
+GND: para cerrar el circuito
+A0 o cualquier pin analógico, ya que este tipo de señales son las usadas para la comunicación
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+¿Cuál es el principio de funcionamiento del componente?
+El sensor cuenta con líneas de metal, que al entrar en contacto con el agua permiten mayor paso de corriente. De esta manera, cuanta más agua hay más corriente puede pasar
+¿Utiliza alguna librería particular para programarlo?
+alcanza con arduino IDE
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+cuanto más alto el valor, significa que más corriente pasa por lo que hay más agua
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+no sumergir completamente
+no dejarlo mucho en agua
+secar bien
+evitar que el agua toque partes electrónicas
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+haría una prueba con un código simple que muestre en el monitor serie los valores captados en base a la cantidad de agua
+Simular en Tinkercad e incluir el link de la simulación. 
+https://www.tinkercad.com/things/8YDmW3RfyMR-bocina/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard 
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+Espero obtener valores correspondientes al nivel de agua medido
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+se moja algo que no se debe mojar
+esta fallado el componente
+se oxida
+Esto se verá si los valores leídos dejan de variar pero a que haya cambios en el nivel del agua
